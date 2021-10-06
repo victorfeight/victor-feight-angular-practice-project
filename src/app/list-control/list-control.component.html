@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-xs-12">
+    <h3>Add new List Item</h3>
+    <label for="item-name">List Item Name</label>
+    <input id="item-name" type="text" class="form-control" [(ngModel)]="newListItem">
+    <label for="item-year">List Item Year</label>
+    <input id="item-year" type="text" class="form-control" [(ngModel)]="newListItemYear">
+    <label for="item-content">List Item Content</label>
+    <input id="item-content" type="text" class="form-control" [(ngModel)]="newListItemContent">
+    <br>
+    <button class="btn btn-primary" (click)="onAddListElement()">Add List Item</button>
+  </div>
+</div>

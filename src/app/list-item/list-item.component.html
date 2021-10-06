@@ -1,0 +1,10 @@
+<div class="panel panel-default">
+  <div *ngIf="element.name && element.year && element.content; else noDate" class="panel-heading">{{ element.name }}
+    ({{
+    element.year }})</div>
+  <ng-template #noDate>
+    <div *ngIf="element.name" class="panel-heading">{{ element.name }}</div>
+  </ng-template>
+    <p class="panel-body">{{ element.content }}</p>
+  <button class="btn btn-danger" (click)="deleteItem()">Delete Item</button>
+</div>
